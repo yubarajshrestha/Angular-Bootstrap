@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-sm-9 col-md-9">
+		<h1 class="mainTitle">{{ title }}</h1>
+		<form>
+			<input type="search" placeholder="search" class="form-control" ng-model="query">
+		<ul class="dataList">
+			<li class="animate-repeat" ng-repeat="item in items | filter: query"><a href="#/single/{{item.id}}">{{ item.title }}</a> <small>{{item.added}}</small></li>
+		</ul>
+		</form>
+	</div>
+	<div class="col-sm-3 col-md-3"></div>
+</div>

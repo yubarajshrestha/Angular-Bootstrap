@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="col-sm-9 col-md-9">
+		<div class="" ng-repeat="item in items | filter: {id: dt}">
+			<h1 class="mainTitle">{{ item.title }}</h1>
+			<p ng-bind-html="item.description"></p>
+		</div>
+	</div>
+	<div class="col-sm-3 col-md-3"></div>
+</div>
